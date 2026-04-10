@@ -339,14 +339,15 @@ app.delete('/todos/:id', (req, res) => {
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(openapiSpecification));
 
 
-/* Mise en comm pour Railway */
-/*app.listen(3000, () => {
+ 
+app.listen(3000, () => {
     console.log('Server is running on http://localhost:3000');
-});*/
+});
 
+/*
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
-});
+});/*
 
